@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chocolate Shop</title>
+  <style>
+ body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+	color:#333;
+	margin:0;
+	padding:0;
+    }
+  header{
+	background:white;
+	padding:20px;
+	font-size:35px;
+	color:#333;
+	font-weight:bold;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	}
+  .logo-text { 
+      display: flex; 
+      align-items: center; 
+      gap: 15px; 
+   	background-color:black; 
+  	padding:10px 20px; 
+   	border-radius:10px; 
+   } 
+  .logo-text span{ 
+  	color:white; 
+  } 
+  .logo-text img { 
+      height: 80px; 
+   } 
+   nav { 
+      display: flex; 
+      justify-content: center; 
+      background: #ffaa00; 
+      padding: 15px; 
+       } 
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-size: 18px; 
+            font-weight: bold; 
+        } 
+        .container { 
+            padding: 40px 20px; 
+            text-align: center; 
+        }
+
+   
+    .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+      width: 200px;
+      text-align: center;
+    }
+    
+.product-grid {
+      display: flex;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+	padding: 20px;
+      justify-content: center;
+    }
+    .product {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ padding: 15px;
+      width: 200px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .product-name {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .price {
+      color: #e67e22;
+    }
+ .product-card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+            text-align: left; 
+            transition: transform 0.3s ease-in-out; 
+        } 
+        .product-card:hover { 
+            transform: translateY(-5px); 
+        } 
+        .product-card img { 
+            width: 100%; 
+            border-radius: 10px; 
+            height: 350px; 
+            object-fit: cover; 
+        } 
+        .product-card h3, .product-card p { 
+            margin-left: 10px; 
+        } 
+        .buy-btn { 
+            display: block; 
+            width: max-content; 
+            padding: 10px 20px; 
+            background: #ffaa00; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin: 10px auto; 
+            font-weight: bold; 
+        } 
+        .about, .contact { 
+            text-align: center; 
+            padding: 40px; 
+            background: lightyellow; 
+            color: black; 
+        } 
+        .about h2, .contact h2 { 
+            font-size: 28px; 
+            margin-bottom: 15px; 
+        }
+  </style>
+</head>
+<body>
+<header> 
+ <div class="logo-text"> 
+ <img src="logo.jpg"alt="Choco Logo"> 
+  <span>Sweet Delights</span> 
+    </div> 
+    </header> 
+    <nav> 
+        <a href="#about">About</a> 
+        <a href="#collection">Collection</a> 
+        <a href="#contact">Contact</a> 
+    </nav> 
+    <div class="about" id="about"> 
+        <h2>About Us</h2> 
+        <p>"Welcome to Sweet Delights,where passion meets indulgence. We're dedicated to crafting exquisite, handcrafted chocolates that delight the senses. "</p> 
+    </div> 
+  </style>
+</head>
+<body>
+  <div class="products">
+    <div class="product">
+<img src="milk.jpg" alt="Milk"> 
+      <h3>Milk Chocolate</h3>
+      <p>Price: 500</p>
+       <a href="thanks.html" class="buy-btn">Buy Now</a> 
+    </div>
+    <div class="product">
+	<img src="dark.jpg" alt="Dark"> 
+      <h3>Dark Chocolate</h3>
+      <p>Price: 350</p>
+      <a href="thanks.html" class="buy-btn">Buy Now</a> 
+    </div>
+    <div class="product">
+	<img src="white.jpg" alt="White">
+      <h3>White Chocolate</h3>
+      <p>Price: 450</p>
+       <a href="thanks.html" class="buy-btn">Buy Now</a> 
+    </div>
+	<div class="product">
+	<img src="nuts.jpg" alt="White">
+      <h3>Nuts Chocolate</h3>
+      <p>Price: 750</p>
+       <a href="thanks.html" class="buy-btn">Buy Now</a> 
+    </div>
+<div class="product">
+	<img src="semi.jpg" alt="Dark"> 
+      <h3>Semi-Sweet Chocolate</h3>
+      <p>Price: 900</p>
+      <a href="thanks.html" class="buy-btn">Buy Now</a> 
+    </div>
+
+  </div>
+
+  
+ 
+            </div> 
+        </div> 
+    </div> 
+    <div class="contact" id="contact"> 
+        <h2>Contact Us</h2> 
+        <p>Email: contact@choco.com</p> 
+        <p>Phone: +91 9876543210</p> 
+    </div> 
+</body>
+</html>
